@@ -1,0 +1,201 @@
+:root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+}
+
+body{
+  overflow: hidden;
+}
+  .wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--lm-bg)
+  }
+  .container{
+    width: 70%;
+    max-width: 27rem;
+    text-align: center;
+  
+  }
+  .input-box{
+    position: relative;
+  }
+  .input-box .search-field{
+   padding: 1.5rem 0;
+    width: 96%;
+    border: none;
+    box-shadow: var(--lm-shadow);
+    padding-left: 1.5rem;
+    border-radius: 10px;
+
+  }
+  .search-btn{
+    position: absolute;
+   top: 10%;
+   right: 0%;
+   width: 20%;
+   height: 80%;
+   cursor: pointer;
+   background-color: var(--btn);
+   border: none;
+   border-radius: 10px;
+   color: white;
+   font-weight: 600;
+   font-size: 1rem;
+  }
+  .search-btn:hover{
+    background-color: var(--btn-hover);
+  }
+  
+  
+  /* Dark theme */
+  /* .dark-theme  {
+    --background-color: #2b3442;
+    --text-color: #f5f5f5;
+    
+   
+  } */
+  
+  
+  .show-content{
+    margin-top: 2rem;
+    background-color:var(--lm-bg-content);
+    color: var(--lm-text-alt);
+    
+    box-shadow: var(--lm-shadow);
+    padding: 2rem;
+    border-radius: 15px;
+  }
+  h3{
+    margin: 0;
+  }
+  .mera-jankaari{
+   
+    display: flex;
+    
+    
+    
+  }
+  .mera-data{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    align-items: flex-start;
+  }
+  .container-name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    align-items: flex-start;
+  }
+  .container-bio{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    align-items: flex-start;
+  }
+  .mera-data h3{
+    margin-bottom: 1rem;
+
+  }
+  
+  .mera-photu{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+   
+    
+  }
+  .count{
+    display: flex;
+    justify-content: space-around;
+  }
+  .social{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .location{
+    display: flex;
+    align-items: baseline;
+  }
+  .location img{
+   
+    margin-right: 1.4rem;
+  }
+  .twitter{
+    display: flex;
+    
+  }
+  .twitter img{
+    margin-right: 1rem;
+  }
+  .linkdin{
+    display: flex;
+  }
+  .linkdin img{
+    margin-right: 1rem;
+  }
+  .pro-peer{
+    display: flex;
+    align-items: baseline;
+    
+  }
+  .pro-peer img{
+    margin-right: 1rem;
+  }
+  @media screen and (max-width:580px) {
+    .container{
+      width: 100%;
+    }
+     .mera-jankaari{
+      display: flex;
+      flex-direction: column;
+     
+     
+
+     }
+     .mera-data{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      
+      align-items: baseline;
+      margin: 0;
+      justify-content: space-between;
+     }
+     .container-name{
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      
+      
+     }
+     .container-name a{
+      margin-left: 0.9rem;
+      color: #2b3442;
+      
+      cursor: pointer;
+     }
+     .social{
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+     }
+  }
+  
